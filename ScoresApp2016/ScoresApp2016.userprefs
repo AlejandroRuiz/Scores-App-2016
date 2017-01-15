@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{C2E2F166-8F00-4A9A-8075-5A6654606AA9}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Renderers/SvgImageRenderer.cs">
+    <Files>
+      <File FileName="iOS/Renderers/SvgImageRenderer.cs" Line="21" Column="3" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ScoresApp2016" expanded="True">
+            <Node name="ScoresApp2016.iOS" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ScoresApp2016.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.EE207C83-7044-49CE-B17B-BFA1F4B3EB1A" />
+  <MultiItemStartupConfigurations />
+</Properties>
