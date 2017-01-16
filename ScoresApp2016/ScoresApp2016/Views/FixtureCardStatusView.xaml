@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ScoresApp2016.FixtureCardStatusView" xmlns:local="clr-namespace:ScoresApp2016">
+	<ContentView.Content>
+		<BoxView VerticalOptions = "FillAndExpand"
+				HorizontalOptions = "FillAndExpand"
+				BackgroundColor = "{x:Static local:ScoresAppStyleKit.FixtureStatusColor}" />
+	</ContentView.Content>
+</ContentView>

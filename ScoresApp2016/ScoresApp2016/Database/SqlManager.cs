@@ -37,7 +37,7 @@ namespace ScoresApp2016
 		{
 			if (Connection != null)
 			{
-				Connection.CreateTable<LeagueItem>();
+				Connection.CreateTable<ScoresApp2016.Common.Models.LeagueItem>();
 			}
 			else
 			{
@@ -45,31 +45,31 @@ namespace ScoresApp2016
 			}
 		}
 
-		public List<LeagueItem> Favorites
+		public List<ScoresApp2016.Common.Models.LeagueItem> Favorites
 		{
 			get
 			{
-				return Connection.Table<LeagueItem>().ToList();
+				return Connection.Table<ScoresApp2016.Common.Models.LeagueItem>().ToList();
 			}
 		}
 
-		public bool IsFavorite(LeagueItem item)
+		public bool IsFavorite(ScoresApp2016.Common.Models.LeagueItem item)
 		{
 			var source = Favorites.FirstOrDefault(i => i.Id == item.Id);
 			return source != null;
 		}
 
-		public void AddToFavorite(LeagueItem item)
+		public void AddToFavorite(ScoresApp2016.Common.Models.LeagueItem item)
 		{
 			if (Favorites.FirstOrDefault(i => i.Id == item.Id) == null)
 				Connection.Insert(item);
 			FavoritesViewModel.FavoritesViewModelManager.UpdateFavorites();
 		}
 
-		public void RemeveFromFavorite(LeagueItem item)
+		public void RemeveFromFavorite(ScoresApp2016.Common.Models.LeagueItem item)
 		{
 			if (Favorites.FirstOrDefault(i => i.Id == item.Id) != null)
-				Connection.Delete<LeagueItem>(item.Id);
+				Connection.Delete<ScoresApp2016.Common.Models.LeagueItem>(item.Id);
 			FavoritesViewModel.FavoritesViewModelManager.UpdateFavorites();
 		}
 

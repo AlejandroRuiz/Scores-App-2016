@@ -10,7 +10,7 @@ namespace ScoresApp2016
 {
 	public static class LeagueItemExtensions
 	{
-		public static bool IsFavorite(this LeagueItem item)
+		public static bool IsFavorite(this Common.Models.LeagueItem item)
 		{
 			return SqlManager.Cache.IsFavorite(item);
 		}

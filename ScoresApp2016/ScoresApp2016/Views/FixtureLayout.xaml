@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ScoresApp2016.FixtureLayout" xmlns:local="clr-namespace:ScoresApp2016">
+	<ViewCell.View>
+		<StackLayout Padding = "15,10" BackgroundColor = "White">
+			<local:FixtureCardView x:Name="_mainCardView" />
+		</StackLayout>
+	</ViewCell.View>
+</ViewCell>

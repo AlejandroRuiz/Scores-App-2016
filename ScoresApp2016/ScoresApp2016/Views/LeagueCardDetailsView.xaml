@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ScoresApp2016.LeagueCardDetailsView" xmlns:local="clr-namespace:ScoresApp2016">
+	<ContentView.Content>
+		<StackLayout HeightRequest = "100"
+				HorizontalOptions = "Fill"
+				BackgroundColor = "{x:Static local:ScoresAppStyleKit.PageBackgroundColor}"
+				Orientation = "Horizontal"
+				IsEnabled = "true"
+				InputTransparent = "true">
+			<Image Source = "{Binding Image}"
+				VerticalOptions = "FillAndExpand"
+				Aspect = "AspectFill"
+				WidthRequest = "120"
+				HorizontalOptions = "Start"
+				IsEnabled = "true"
+				InputTransparent = "true" />
+			<StackLayout Spacing = "5"
+						HorizontalOptions = "FillAndExpand"
+						VerticalOptions = "Center"
+						IsEnabled = "true"
+						InputTransparent = "true">
+				<Label Text = "{Binding Text}"
+					FontSize = "15"
+					FontFamily = "AvenirNext-DemiBold"
+					TextColor = "Black"
+					HorizontalTextAlignment = "Center"
+					IsEnabled = "true"
+					InputTransparent = "true" />
+				<Label Text = "{Binding Description}"
+					FontSize = "10"
+					FontFamily = "AvenirNext-DemiBold"
+					TextColor = "#546792"
+					HorizontalTextAlignment = "Center"
+					IsEnabled = "true"
+					InputTransparent = "true" />
+			</StackLayout>
+		</StackLayout>
+	</ContentView.Content>
+</ContentView>

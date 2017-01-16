@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ScoresApp2016.NoDataView">
+	<ContentView.Content>
+		<StackLayout Spacing="20">
+			<Image x:Name="_noFavoritesImage" />
+			<Label x:Name="_noFavoritesLabel"
+				FontSize = "25"
+				FontFamily = "AvenirNext-DemiBold"
+				TextColor = "Black"
+				HorizontalTextAlignment = "Center"
+				HorizontalOptions = "FillAndExpand" />
+		</StackLayout>
+	</ContentView.Content>
+</ContentView>

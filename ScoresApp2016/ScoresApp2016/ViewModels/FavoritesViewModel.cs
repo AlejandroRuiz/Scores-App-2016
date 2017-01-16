@@ -19,14 +19,14 @@ namespace ScoresApp2016
 			}
 		}
 
-		static ObservableCollection<LeagueItem> _favoritesLeagues;
-		public ObservableCollection<LeagueItem> FavoritesLeagues
+		static ObservableCollection<ScoresApp2016.Common.Models.LeagueItem> _favoritesLeagues;
+		public ObservableCollection<ScoresApp2016.Common.Models.LeagueItem> FavoritesLeagues
 		{
 			get
 			{
 				if (_favoritesLeagues == null)
 				{
-					_favoritesLeagues = new ObservableCollection<LeagueItem>(SqlManager.Cache.Favorites);
+					_favoritesLeagues = new ObservableCollection<ScoresApp2016.Common.Models.LeagueItem>(SqlManager.Cache.Favorites);
 				}
 				return _favoritesLeagues;
 			}
@@ -39,7 +39,7 @@ namespace ScoresApp2016
 			if (this.IsEqualToCollection(newList)) return;
 
 			// handle deleted items
-			IList<LeagueItem> deletedItems = this.GetDeletedItems(newList);
+			IList<ScoresApp2016.Common.Models.LeagueItem> deletedItems = this.GetDeletedItems(newList);
 			if (deletedItems.Count > 0)
 			{
 				foreach (var deletedItem in deletedItems)
@@ -49,10 +49,10 @@ namespace ScoresApp2016
 			}
 
 			// handle added items
-			IList<LeagueItem> addedItems = this.GetAddedItems(newList);
+			IList<ScoresApp2016.Common.Models.LeagueItem> addedItems = this.GetAddedItems(newList);
 			if (addedItems.Count > 0)
 			{
-				foreach (LeagueItem addedItem in addedItems)
+				foreach (var addedItem in addedItems)
 				{
 					FavoritesLeagues.Add(addedItem);
 				}
@@ -70,19 +70,19 @@ namespace ScoresApp2016
 			}
 		}
 
-		private IList<LeagueItem> GetAddedItems(IEnumerable<LeagueItem> newList)
+		private IList<ScoresApp2016.Common.Models.LeagueItem> GetAddedItems(IEnumerable<ScoresApp2016.Common.Models.LeagueItem> newList)
 		{
-			IList<LeagueItem> addedItems = new List<LeagueItem>();
-			foreach (LeagueItem item in newList)
+			IList<ScoresApp2016.Common.Models.LeagueItem> addedItems = new List<ScoresApp2016.Common.Models.LeagueItem>();
+			foreach (var item in newList)
 			{
 				if (!this.ContainsItem(item)) addedItems.Add(item);
 			}
 			return addedItems;
 		}
 
-		private IList<LeagueItem> GetDeletedItems(IEnumerable<LeagueItem> newList)
+		private IList<ScoresApp2016.Common.Models.LeagueItem> GetDeletedItems(IEnumerable<ScoresApp2016.Common.Models.LeagueItem> newList)
 		{
-			IList<LeagueItem> deletedItems = new List<LeagueItem>();
+			IList<ScoresApp2016.Common.Models.LeagueItem> deletedItems = new List<ScoresApp2016.Common.Models.LeagueItem>();
 			foreach (var item in FavoritesLeagues)
 			{
 				if (!newList.Contains(item)) deletedItems.Add(item);
@@ -90,7 +90,7 @@ namespace ScoresApp2016
 			return deletedItems;
 		}
 
-		private bool IsEqualToCollection(IList<LeagueItem> newList)
+		private bool IsEqualToCollection(IList<ScoresApp2016.Common.Models.LeagueItem> newList)
 		{
 			// diffent number of items => collection differs
 			if (FavoritesLeagues.Count != newList.Count) return false;

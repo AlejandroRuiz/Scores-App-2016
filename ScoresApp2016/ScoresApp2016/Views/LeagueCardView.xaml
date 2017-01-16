@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ScoresApp2016.LeagueCardView" xmlns:local="clr-namespace:ScoresApp2016">
+	<ContentView.Content>
+		<Grid Padding = "1,1,2,2"
+				RowSpacing = "0"
+				ColumnSpacing = "0"		
+				BackgroundColor = "#E3E3E3"
+				Opacity = "0.5">
+			<Grid.RowDefinitions>
+					<RowDefinition Height ="100" />
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="4" />
+				<ColumnDefinition />
+			</Grid.ColumnDefinitions>
+			<Grid.GestureRecognizers>
+				<TapGestureRecognizer NumberOfTapsRequired="1" Tapped="Button_Clicked"/>
+			</Grid.GestureRecognizers>
+			<local:FixtureCardStatusView Grid.Row="0" Grid.Column="0" />
+			<local:LeagueCardDetailsView x:Name="_card" Grid.Row="1" Grid.Column="0" />
+		</Grid>
+	</ContentView.Content>
+</ContentView>

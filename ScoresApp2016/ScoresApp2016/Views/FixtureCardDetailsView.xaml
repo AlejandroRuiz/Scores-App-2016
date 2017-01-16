@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ScoresApp2016.FixtureCardDetailsView" xmlns:local="clr-namespace:ScoresApp2016">
+	<ContentView.Content>
+		<StackLayout BackgroundColor = "{x:Static local:ScoresAppStyleKit.MenuBackgroundColor}" Spacing = "10" Padding = "5, 0, 5, 0" Orientation = "Horizontal">
+			<local:SvgImage SvgPath="{Binding TeamImage}" HeightRequest = "40" WidthRequest = "40" HorizontalOptions = "Start" VerticalOptions = "CenterAndExpand" />
+			<Label LineBreakMode = "TailTruncation" Text = "{Binding TeamName}" FontSize = "18" TextColor = "Black" VerticalOptions = "CenterAndExpand" />
+			<Label Text = "{Binding TeamGoals}" FontSize = "15" FontFamily = "AvenirNext-DemiBold" TextColor = "{x:Static local:ScoresAppStyleKit.NavigationBarTextColor}" BackgroundColor = "{x:Static local:ScoresAppStyleKit.NavigationBarBackgroundColor}" VerticalOptions = "CenterAndExpand" HeightRequest = "20" WidthRequest = "20"
+				HorizontalTextAlignment = "Center"
+				VerticalTextAlignment = "Center"
+				HorizontalOptions = "EndAndExpand" />
+		</StackLayout>
+	</ContentView.Content>
+</ContentView>

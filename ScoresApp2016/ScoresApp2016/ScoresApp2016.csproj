@@ -30,6 +30,45 @@
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
     <EmbeddedResource Include="ScoresApp2016Page.xaml" />
+    <EmbeddedResource Include="Views\FixtureCardDetailsView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FixtureCardStatusView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FixtureCardView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FixtureLayout.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LeagueCardDetailsView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LeagueCardView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LoadingDataView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NoDataView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\LeagueResultsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\MainMasterDetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\MatchDetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\MenuPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\WelcomePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -48,6 +87,45 @@
     <Compile Include="UI\ScoresAppStyleKit.cs" />
     <Compile Include="ViewModels\FavoritesViewModel.cs" />
     <Compile Include="ViewModels\MenuViewModel.cs" />
+    <Compile Include="Views\FixtureCardDetailsView.xaml.cs">
+      <DependentUpon>FixtureCardDetailsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FixtureCardStatusView.xaml.cs">
+      <DependentUpon>FixtureCardStatusView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FixtureCardView.xaml.cs">
+      <DependentUpon>FixtureCardView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FixtureLayout.xaml.cs">
+      <DependentUpon>FixtureLayout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LeagueCardDetailsView.xaml.cs">
+      <DependentUpon>LeagueCardDetailsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LeagueCardView.xaml.cs">
+      <DependentUpon>LeagueCardView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoadingDataView.xaml.cs">
+      <DependentUpon>LoadingDataView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NoDataView.xaml.cs">
+      <DependentUpon>NoDataView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LeagueResultsPage.xaml.cs">
+      <DependentUpon>LeagueResultsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MainMasterDetailPage.xaml.cs">
+      <DependentUpon>MainMasterDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MatchDetailPage.xaml.cs">
+      <DependentUpon>MatchDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MenuPage.xaml.cs">
+      <DependentUpon>MenuPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\WelcomePage.xaml.cs">
+      <DependentUpon>WelcomePage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="SQLite.Net">

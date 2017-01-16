@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ScoresApp2016.FixtureCardView" xmlns:local="clr-namespace:ScoresApp2016">
+	<ContentView.Content>
+		<Grid Padding = "1,1,2,2"
+				RowSpacing = "1"
+				ColumnSpacing = "0"		
+				BackgroundColor = "#E3E3E3"
+				Opacity = "0.5"
+				VerticalOptions = "FillAndExpand" >
+				<Grid.RowDefinitions>
+					<RowDefinition Height="50" />
+					<RowDefinition Height="50" />
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="4" />
+					<ColumnDefinition Width="96*" />
+				</Grid.ColumnDefinitions>
+			<local:FixtureCardStatusView Grid.Row="0" Grid.ColumnSpan="1" Grid.Column="0" Grid.RowSpan="2" />
+			<local:FixtureCardDetailsView x:Name="_homeTeamDetails" Grid.Row="1" Grid.Column="0" />
+			<local:FixtureCardDetailsView x:Name="_awayTeamDetails" Grid.Row="1" Grid.Column="1" />
+		</Grid>
+	</ContentView.Content>
+</ContentView>

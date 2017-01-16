@@ -6,15 +6,15 @@ namespace ScoresApp2016.Common.Models
 {
 	public class LeagueItem
 	{
-		static LeagueItem _favorites;
+		static Common.Models.LeagueItem _favorites;
 		[Ignore]
-		public static LeagueItem Favorites
+		public static Common.Models.LeagueItem Favorites
 		{
 			get
 			{
 				if (_favorites == null)
 				{
-					_favorites = new LeagueItem
+					_favorites = new Common.Models.LeagueItem
 					{
 						Text = "Favorites"
 					};

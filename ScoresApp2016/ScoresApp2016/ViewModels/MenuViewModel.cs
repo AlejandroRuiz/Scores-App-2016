@@ -7,21 +7,21 @@ namespace ScoresApp2016
 {
 	public class MenuViewModel: BaseViewModel
 	{
-		ObservableCollection<LeagueItem> _menuItems;
-		public ObservableCollection<LeagueItem> MenuItems
+		ObservableCollection<ScoresApp2016.Common.Models.LeagueItem> _menuItems;
+		public ObservableCollection<ScoresApp2016.Common.Models.LeagueItem> MenuItems
 		{
 			get
 			{
 				if (_menuItems == null)
 				{
-					_menuItems = new ObservableCollection<LeagueItem>(){
-						LeagueItem.Favorites,
-						LeagueItem.Bundesliga,
-						LeagueItem.PremiereLeague,
-						LeagueItem.SerieA,
-						LeagueItem.PrimeraDivision,
-						LeagueItem.Ligue1,
-						LeagueItem.Eredivisie
+					_menuItems = new ObservableCollection<ScoresApp2016.Common.Models.LeagueItem>(){
+						ScoresApp2016.Common.Models.LeagueItem.Favorites,
+						ScoresApp2016.Common.Models.LeagueItem.Bundesliga,
+						ScoresApp2016.Common.Models.LeagueItem.PremiereLeague,
+						ScoresApp2016.Common.Models.LeagueItem.SerieA,
+						ScoresApp2016.Common.Models.LeagueItem.PrimeraDivision,
+						ScoresApp2016.Common.Models.LeagueItem.Ligue1,
+						ScoresApp2016.Common.Models.LeagueItem.Eredivisie
 					};
 				}
 				return _menuItems;
