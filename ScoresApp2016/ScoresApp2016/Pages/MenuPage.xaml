@@ -1,5 +1,32 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ScoresApp2016.MenuPage">
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ScoresApp2016.MenuPage" xmlns:local="clr-namespace:ScoresApp2016"
+	Title="{Binding PageTitle}"
+	Icon="{Binding PageIcon}"
+	BackgroundColor="{Binding PageBackgroundColor}">
+	<ContentPage.BindingContext>
+		<local:MenuViewModel />
+	</ContentPage.BindingContext>
 	<ContentPage.Content>
+		<StackLayout Padding="10,30,10,30" Spacing="20">
+			<Image HeightRequest = "50"
+				WidthRequest = "50"
+				Source = "ic_blur_circular_48pt" />
+			<Label Text = "{x:Static local:Strings.LeagueText}"
+				TextColor = "Black"
+				FontSize = "25"
+				HorizontalTextAlignment = "Center" />
+			<ListView x:Name="_menuListView"
+				SeparatorVisibility = "None"
+				VerticalOptions = "Start"
+				BackgroundColor = "{x:Static local:ScoresAppStyleKit.MenuBackgroundColor}"
+				ItemsSource = "{Binding MenuItems}"
+				HeightRequest = "{Binding MenuItemsHeightRequest}">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ImageCell Text="{Binding Text}" TextColor="{Binding TextColor}" Detail="{Binding Description}" DetailColor="{Binding DescriptionColor}" />
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+		</StackLayout>
 	</ContentPage.Content>
 </ContentPage>

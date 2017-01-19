@@ -158,6 +158,41 @@
     <Compile Include="Renderers\FavoritesPageRenderer.cs" />
     <Compile Include="Renderers\SvgImageRenderer.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_account_circle.png" />
+    <BundleResource Include="Resources\ic_account_circle%402x.png" />
+    <BundleResource Include="Resources\ic_account_circle%403x.png" />
+    <BundleResource Include="Resources\ic_add_white.png" />
+    <BundleResource Include="Resources\ic_add_white%402x.png" />
+    <BundleResource Include="Resources\ic_add_white%403x.png" />
+    <BundleResource Include="Resources\ic_arrow_downward.png" />
+    <BundleResource Include="Resources\ic_arrow_downward%402x.png" />
+    <BundleResource Include="Resources\ic_arrow_downward%403x.png" />
+    <BundleResource Include="Resources\ic_autorenew_48pt.png" />
+    <BundleResource Include="Resources\ic_autorenew_48pt%402x.png" />
+    <BundleResource Include="Resources\ic_autorenew_48pt%403x.png" />
+    <BundleResource Include="Resources\ic_blur_circular_48pt.png" />
+    <BundleResource Include="Resources\ic_blur_circular_48pt%402x.png" />
+    <BundleResource Include="Resources\ic_blur_circular_48pt%403x.png" />
+    <BundleResource Include="Resources\ic_cloud_off_48pt.png" />
+    <BundleResource Include="Resources\ic_cloud_off_48pt%402x.png" />
+    <BundleResource Include="Resources\ic_cloud_off_48pt%403x.png" />
+    <BundleResource Include="Resources\ic_favorite_48pt.png" />
+    <BundleResource Include="Resources\ic_favorite_48pt%402x.png" />
+    <BundleResource Include="Resources\ic_favorite_48pt%403x.png" />
+    <BundleResource Include="Resources\ic_favorite_border_white.png" />
+    <BundleResource Include="Resources\ic_favorite_border_white%402x.png" />
+    <BundleResource Include="Resources\ic_favorite_border_white%403x.png" />
+    <BundleResource Include="Resources\ic_favorite_white.png" />
+    <BundleResource Include="Resources\ic_favorite_white%402x.png" />
+    <BundleResource Include="Resources\ic_favorite_white%403x.png" />
+    <BundleResource Include="Resources\ic_menu_white.png" />
+    <BundleResource Include="Resources\ic_menu_white%402x.png" />
+    <BundleResource Include="Resources\ic_menu_white%403x.png" />
+    <BundleResource Include="Resources\ic_remove_white.png" />
+    <BundleResource Include="Resources\ic_remove_white%402x.png" />
+    <BundleResource Include="Resources\ic_remove_white%403x.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.3.3.180\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.3.180\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
 </Project>

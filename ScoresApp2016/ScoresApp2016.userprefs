@@ -1,24 +1,9 @@
 ﻿<Properties StartupConfiguration="{C2E2F166-8F00-4A9A-8075-5A6654606AA9}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ScoresApp2016/App.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ScoresApp2016/Pages/LeagueResultsPage.xaml.cs">
     <Files>
-      <File FileName="ScoresApp2016/App.xaml.cs" Line="27" Column="1" />
+      <File FileName="ScoresApp2016/Pages/LeagueResultsPage.xaml" Line="1" Column="1" />
+      <File FileName="ScoresApp2016/Pages/LeagueResultsPage.xaml.cs" Line="369" Column="5" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="ScoresApp2016" expanded="True">
-            <Node name="ScoresApp2016.Droid" expanded="True">
-              <Node name="Resources" expanded="True">
-                <Node name="layout" expanded="True" />
-                <Node name="values" expanded="True">
-                  <Node name="styles.xml" selected="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
